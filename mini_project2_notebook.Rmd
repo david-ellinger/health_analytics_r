@@ -8,15 +8,19 @@ output: github_document
 ---
 
 # Background and Significance
-For my project, I am consuming the [API from The Covid Tracking Project](https://covidtracking.com/data/api). The datasets provided allow for in depth analysis of the U.S national and state data relating to Covid-19. Covid-19 has rapidly been spreading over the course of the last year. Analyzing data may help us better prepare for the next pandemic, help develop a vaccine, drive better pandemic safety protocols in the future.
+Covid-19 has been spreading globally for most of this year, finding correlations and analyzing the data that is getting generated every day from this pandemic could help us handle the next one better than the current. 
+In this project, I am going to explore the impact on daily death count from when a state gave a stay at home mandate. This could be used in the future to help dictate to other governments when it is appropriate to have this mandate.
 
 
 # Problem
-Was there a decrease in daily deaths after a state gave stay at home orders? 
+
+Is there a noticeable decrease in daily deaths after a state gave stay at home orders?
 
 # Proposed Solution
 
-My solution pulls down data for all states in the New England region of the united states. Based on the National Academy for State Health Policy, the original stay at home order dates are captured along with other information. Each state is different in their policies so it is not a one for one match, but does give a good regional idea.
+My sample data shows all of the New England state death counts along with the dates. Each set has their dates as 30 days before the stay at home order was given and 30 days after it was lifted. 
+Admittedly, the change isn’t as drastic as I would of expected (or hoped).  The following links are where they can be accessed. 
+
 
 # Demo
 
@@ -78,3 +82,5 @@ National Academy for State Health Policy. (2020, September 10).
 Chart: Each State’s COVID-19 Reopening and Reclosing Plans and Mask Requirements [Dataset]. https://www.nashp.org/governors-prioritize-health-for-all/
 
 The COVID Tracking Project. (2020, March 1). Data API [Dataset]. https://covidtracking.com/data/api/
+
+The R Foundation. (2020). R: The R Project for Statistical Computing. Https://Www.r-Project.Org/. https://www.r-project.org/

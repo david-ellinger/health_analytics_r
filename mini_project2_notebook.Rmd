@@ -20,7 +20,7 @@ My solution pulls down data for all states in the New England region of the unit
 
 # Demo
 
-```{r, init, include=TRUE, warning=FALSE, echo=FALSE}
+```{r}
 install.packages("pacman",repos="http://cran.us.r-project.org")
 pacman::p_load(httr, jsonlite, corrplot, ggplot2, dplyr, gridExtra, install = TRUE)
 

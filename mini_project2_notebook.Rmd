@@ -7,7 +7,7 @@ output: github_document
 # Correlation of positive test results and death
 
 ```{r}
-install.packages("pacman")
+install.packages("pacman", repos = "http://cran.us.r-project.org")
 pacman::p_load(httr, jsonlite, corrplot, ggplot2, install = TRUE)
 
 api <- "api.covidtracking.com/v1/states/ma/daily.json"

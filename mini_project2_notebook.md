@@ -2,23 +2,13 @@ Covid Data Analytics
 ================
 David Ellinger
 
+# Setup
+
+    ## Loading required package: pacman
+
 # Correlation of positive test results and death
 
 ``` r
-install.packages("pacman", repos = "http://cran.us.r-project.org")
-```
-
-    ## Installing package into 'C:/Users/david/Documents/R/win-library/4.0'
-    ## (as 'lib' is unspecified)
-
-    ## package 'pacman' successfully unpacked and MD5 sums checked
-    ## 
-    ## The downloaded binary packages are in
-    ##  C:\Users\david\AppData\Local\Temp\RtmpUjQUTX\downloaded_packages
-
-``` r
-pacman::p_load(httr, jsonlite, corrplot, ggplot2, install = TRUE)
-
 api <- "api.covidtracking.com/v1/states/ma/daily.json"
 raw_state_data <- GET(api)
 raw_state_text <- content(raw_state_data, "text")

@@ -3,13 +3,17 @@ title: "Covid Data Analytics"
 author: David Ellinger
 output: github_document
 ---
+# Setup
+```{r, init, echo=FALSE}
+if(!require(pacman)) install.packages("pacman",repos = "http://cran.us.r-project.org")
+
+pacman::p_load(httr, jsonlite, corrplot, ggplot2, install = TRUE)
+```
+
 
 # Correlation of positive test results and death
 
-```{r}
-install.packages("pacman", repos = "http://cran.us.r-project.org")
-pacman::p_load(httr, jsonlite, corrplot, ggplot2, install = TRUE)
-
+```{r, echo=FALSE}
 api <- "api.covidtracking.com/v1/states/ma/daily.json"
 raw_state_data <- GET(api)
 raw_state_text <- content(raw_state_data, "text")

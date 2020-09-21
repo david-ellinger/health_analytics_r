@@ -1,8 +1,7 @@
 ---
 title: "Covid Data Analytics"
-output:
-  html_document: default
-  mini_project2_notebook: default
+author: David Ellinger
+output: github_document
 ---
 
 # Correlation of positive test results and death

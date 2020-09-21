@@ -1,3 +1,13 @@
+---
+title: "Covid Data Analytics"
+output:
+  pdf_document: default
+  mini_project2_notebook: default
+---
+
+# Correlation of positive test results and death
+
+```{r}
 install.packages("pacman")
 pacman::p_load(httr, jsonlite, corrplot, ggplot2, install = TRUE)
 
@@ -12,4 +22,4 @@ ggplot(state_data) +
   aes(x = positive, y = death) +
   geom_point(colour = "#0c4c8a") +
   theme_minimal()
-
+```
